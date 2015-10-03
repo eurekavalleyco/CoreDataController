@@ -14,7 +14,7 @@
 #import "AKDebugger.h"
 #import "AKGenerics.h"
 #import <CoreData/CoreData.h>
-#import "AKPrivateInfo.h"
+#import "PrivateInfo.h"
 #import "CentralDispatch.h"
 
 #pragma mark - // DEFINITIONS (Private) //
@@ -91,7 +91,7 @@
         return _persistentStoreCoordinator;
     }
     
-    NSURL *storeURL = [[AKPrivateInfo applicationDocumentsDirectory] URLByAppendingPathComponent:CORE_DATA_FILENAME];
+    NSURL *storeURL = [[PrivateInfo applicationDocumentsDirectory] URLByAppendingPathComponent:CORE_DATA_FILENAME];
     NSError *error;
     NSManagedObjectModel *managedObjectModel = [self managedObjectModel];
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:managedObjectModel];

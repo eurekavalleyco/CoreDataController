@@ -212,7 +212,7 @@
     return object;
 }
 
-#pragma mark - // PUBLIC METHODS (Fetch Requests) //
+#pragma mark - // PUBLIC METHODS (Getters) //
 
 + (NSArray *)fetchObjectsWithClass:(NSString *)className
                          predicate:(NSPredicate *)predicate

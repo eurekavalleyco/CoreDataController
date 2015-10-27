@@ -28,7 +28,7 @@
 
 + (id)createObjectWithClass:(NSString *)className block:(void (^)(id))block;
 
-// FETCH REQUESTS //
+// GETTERS //
 
 + (NSArray *)fetchObjectsWithClass:(NSString *)className
                          predicate:(NSPredicate *)predicate
